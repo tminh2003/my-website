@@ -111,9 +111,6 @@ nav .nav-links {
   margin-bottom: 2rem;
   text-align: center;
 }
-.projects-section .project {
-  padding: 5.6rem 0 5.6rem 0;
-}
 .projects-section .project-number {
   font-size: 1rem;
   letter-spacing: 2px;
@@ -140,15 +137,16 @@ nav .nav-links {
   margin-bottom: 1.6rem;
   line-height: 2;
 }
-.projects-section .project-image-container {
-  background-color: transparent;
+.projects-section hr {
+  margin: 5.6rem 0 5.6rem 0;
 }
 .projects-section img {
-  max-width: 50%;
-  height: auto;
-  display: block;
-  border-radius: 15px;
-  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+  max-width: 12rem;
+}
+.projects-section .project-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media (min-width: 769px) {
   .projects-section .project {
@@ -156,9 +154,12 @@ nav .nav-links {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 10rem;
+  }
+  .projects-section .project-text {
+    width: 75%;
   }
   .projects-section .project-image-container {
-    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -169,7 +170,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 2rem 0;
+  padding: 2rem 2rem;
 }
 footer a {
   font-size: 1rem;
