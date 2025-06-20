@@ -8,6 +8,11 @@ $dark-gray: #333;
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: $gray;
+}
+
 body {
   font-size: 10px;
   color: $gray;
@@ -127,7 +132,7 @@ nav {
   }
 
   .project {
-    padding: 2.4rem 0 2.4rem 0;
+    padding: 5.6rem 0 5.6rem 0;
   }
   .project-number {
     font-size: 1rem;
@@ -160,13 +165,32 @@ nav {
     line-height: 2;
   }
 
+  .project-image-container {
+    background-color: transparent;
+  }
+
   img {
     max-width: 50%;
     height: auto;
     display: block;
     border-radius: 15px;
     box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
-    margin-bottom: 5.6rem;
+  }
+
+  @media (min-width: 769px) {
+    .project {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .project-image-container {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 }
 
